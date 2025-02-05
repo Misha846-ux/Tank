@@ -1,19 +1,6 @@
-﻿  Creature.cpp
-  Enemy.cpp
-C:\Users\Миша\source\repos\Test\Test\Enemy.cpp(6,21): warning C4965: implicit box of integer 0; use nullptr or explicit cast
-C:\Users\Миша\source\repos\Test\Test\Enemy.cpp(229,14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  MyForm.cpp
-C:\Users\Миша\source\repos\Test\Test\MyForm.h(40,16): warning C4490: 'override': incorrect use of override specifier; 'Test::MyForm::onPaint' does not match a base ref class method
-  (compiling source file 'MyForm.cpp')
-      C:\Users\Миша\source\repos\Test\Test\MyForm.h(40,16):
-      'new' or 'override' are only allowed when a matching base method from a ref class exists
-  
-C:\Users\Миша\source\repos\Test\Test\MyForm.h(159,14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  (compiling source file 'MyForm.cpp')
-  
-  Player.cpp
-  Wall.cpp
-  Generating Code...
-C:\Users\Миша\source\repos\Test\Test\Enemy.cpp(117,1): warning C4715: 'Enemy::isPlayerOnLine': not all control paths return a value
+﻿  Enemy.cpp
+C:\Users\Миша\Desktop\Tank\Test\Enemy.cpp(6,21): warning C4965: implicit box of integer 0; use nullptr or explicit cast
+C:\Users\Миша\Desktop\Tank\Test\Enemy.cpp(261,14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Миша\Desktop\Tank\Test\Enemy.cpp(117,1): warning C4715: 'Enemy::isPlayerOnLine': not all control paths return a value
   Creature.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  Test.vcxproj -> C:\Users\Миша\source\repos\Test\x64\Debug\Test.exe
+  Test.vcxproj -> C:\Users\Миша\Desktop\Tank\x64\Debug\Test.exe

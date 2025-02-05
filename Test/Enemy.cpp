@@ -128,9 +128,17 @@ void Enemy::shot(Point playerPosition, bool^ playerLive) {
 			}
 			for (int i = 1; i <= *this->enemyCount; i++) {
 				if (newPosition == this->enemyList->getEnemyFromPosition(i)->getPosition()) {
-					this->enemyList->deleteFromPosition(i);
-					*this->enemyCount -= 1;
-					return;
+					if (*this->enemyList->getEnemyFromPosition(i)->getAlive() == true) {
+						delete this->enemyList->getEnemyFromPosition(i)->getBrush();
+						this->enemyList->getEnemyFromPosition(i)->setAlive(false);
+						this->enemyList->getEnemyFromPosition(i)->setBrush(gcnew SolidBrush(Color::White));
+						return;
+					}
+					else {
+						this->enemyList->deleteFromPosition(i);
+						*this->enemyCount -= 1;
+						return;
+					}
 				}
 			}
 			for (int i = 1; i <= *this->wallsCount; i++) {
@@ -153,9 +161,17 @@ void Enemy::shot(Point playerPosition, bool^ playerLive) {
 			}
 			for (int i = 1; i <= *this->enemyCount; i++) {
 				if (newPosition == this->enemyList->getEnemyFromPosition(i)->getPosition()) {
-					this->enemyList->deleteFromPosition(i);
-					*this->enemyCount -= 1;
-					return;
+					if (*this->enemyList->getEnemyFromPosition(i)->getAlive() == true) {
+						delete this->enemyList->getEnemyFromPosition(i)->getBrush();
+						this->enemyList->getEnemyFromPosition(i)->setAlive(false);
+						this->enemyList->getEnemyFromPosition(i)->setBrush(gcnew SolidBrush(Color::White));
+						return;
+					}
+					else {
+						this->enemyList->deleteFromPosition(i);
+						*this->enemyCount -= 1;
+						return;
+					}
 				}
 			}
 			for (int i = 1; i <= *this->wallsCount; i++) {
@@ -178,9 +194,17 @@ void Enemy::shot(Point playerPosition, bool^ playerLive) {
 			}
 			for (int i = 1; i <= *this->enemyCount; i++) {
 				if (newPosition == this->enemyList->getEnemyFromPosition(i)->getPosition()) {
-					this->enemyList->deleteFromPosition(i);
-					*this->enemyCount -= 1;
-					return;
+					if (*this->enemyList->getEnemyFromPosition(i)->getAlive() == true) {
+						delete this->enemyList->getEnemyFromPosition(i)->getBrush();
+						this->enemyList->getEnemyFromPosition(i)->setAlive(false);
+						this->enemyList->getEnemyFromPosition(i)->setBrush(gcnew SolidBrush(Color::White));
+						return;
+					}
+					else {
+						this->enemyList->deleteFromPosition(i);
+						*this->enemyCount -= 1;
+						return;
+					}
 				}
 			}
 			for (int i = 1; i <= *this->wallsCount; i++) {
@@ -203,9 +227,17 @@ void Enemy::shot(Point playerPosition, bool^ playerLive) {
 			}
 			for (int i = 1; i <= *this->enemyCount; i++) {
 				if (newPosition == this->enemyList->getEnemyFromPosition(i)->getPosition()) {
-					this->enemyList->deleteFromPosition(i);
-					*this->enemyCount -= 1;
-					return;
+					if (*this->enemyList->getEnemyFromPosition(i)->getAlive() == true) {
+						delete this->enemyList->getEnemyFromPosition(i)->getBrush();
+						this->enemyList->getEnemyFromPosition(i)->setAlive(false);
+						this->enemyList->getEnemyFromPosition(i)->setBrush(gcnew SolidBrush(Color::White));
+						return;
+					}
+					else {
+						this->enemyList->deleteFromPosition(i);
+						*this->enemyCount -= 1;
+						return;
+					}
 				}
 			}
 			for (int i = 1; i <= *this->wallsCount; i++) {

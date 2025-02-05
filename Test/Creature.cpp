@@ -9,7 +9,7 @@ using namespace System::Collections::Generic;
 
 Creature::Creature() {
 	this->position = Point(100, 100);
-	this->alive = true;
+	this->alive = gcnew bool(true);
 	this->size = 10;
 }
 

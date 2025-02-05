@@ -187,12 +187,12 @@ namespace Test {
 				}
 				this->turn++;
 			}
+			this->Invalidate();
 			if (*this->player->getAlive() == false) {
 				timer->Stop();
 				MessageBox::Show("You lose!!");
 				return;
 			}
-			this->Invalidate();
 		}
 		void action(Object^ obj, KeyEventArgs^ e) {
 			if (this->turn % 2 != 0) {
